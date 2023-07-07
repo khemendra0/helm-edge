@@ -1,0 +1,18 @@
+apiVersion: v1
+entries:
+  jcloud-edge:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2023-07-07T17:41:55.444480493+05:30"
+    dependencies:
+    - name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: x.x.1
+    description: This is a big application with lots of dependent subcharts
+    digest: 34b0d536138e28a761f3530eb5116cce0e59736627cdff4297cc586474ff2543
+    name: jcloud-edge
+    type: application
+    urls:
+    - https://khemendra0.github.io/helm-edge/jcloud-edge-0.0.1.tgz
+    version: 0.0.1
+generated: "2023-07-07T17:41:55.436471846+05:30"
