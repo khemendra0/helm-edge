@@ -3,7 +3,7 @@ entries:
   jcloud-edge:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2023-07-07T19:35:08.155999879+05:30"
+    created: "2023-07-07T20:09:49.797411544+05:30"
     dependencies:
     - name: mongodb
       repository: https://charts.bitnami.com/bitnami
@@ -18,7 +18,7 @@ entries:
   jcloud-edge-mist:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2023-07-07T19:35:08.156907867+05:30"
+    created: "2023-07-07T20:09:49.798384203+05:30"
     dependencies:
     - name: mist-oc-proxy
       repository: https://svl-artifactory.juniper.net/artifactory/healthbot-helm-dev/
@@ -30,4 +30,24 @@ entries:
     urls:
     - https://khemendra0.github.io/helm-edge/jcloud-edge-mist-0.0.1.tgz
     version: 0.0.1
-generated: "2023-07-07T19:35:08.148473319+05:30"
+  jcloud-edge-mist-all:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2023-07-07T20:09:49.799333416+05:30"
+    dependencies:
+    - condition: mist-oc-proxy.enabled
+      name: mist-oc-proxy
+      repository: https://svl-artifactory.juniper.net/artifactory/healthbot-helm-dev/
+      version: x.x.2
+    - condition: mist-agent-go.enabled
+      name: mist-agent-go
+      repository: https://svl-artifactory.juniper.net/artifactory/healthbot-helm-dev/
+      version: x.x.2
+    description: This is a big application with lots of dependent subcharts
+    digest: 4afa2ba27e09725837b481af183ccfe5d0e39c27b1be884e5d50ec33e9b52e99
+    name: jcloud-edge-mist-all
+    type: application
+    urls:
+    - https://khemendra0.github.io/helm-edge/jcloud-edge-mist-all-0.0.1.tgz
+    version: 0.0.1
+generated: "2023-07-07T20:09:49.790093943+05:30"
