@@ -3,7 +3,7 @@ entries:
   jcloud-edge:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2023-07-07T17:41:55.444480493+05:30"
+    created: "2023-07-07T19:35:08.155999879+05:30"
     dependencies:
     - name: mongodb
       repository: https://charts.bitnami.com/bitnami
@@ -15,4 +15,19 @@ entries:
     urls:
     - https://khemendra0.github.io/helm-edge/jcloud-edge-0.0.1.tgz
     version: 0.0.1
-generated: "2023-07-07T17:41:55.436471846+05:30"
+  jcloud-edge-mist:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2023-07-07T19:35:08.156907867+05:30"
+    dependencies:
+    - name: mist-oc-proxy
+      repository: https://svl-artifactory.juniper.net/artifactory/healthbot-helm-dev/
+      version: x.x.2
+    description: This is a big application with lots of dependent subcharts
+    digest: 86884c3a829986a2bb6eefdc7234161b8813eb7132b7e76577f9b9d6198c460a
+    name: jcloud-edge-mist
+    type: application
+    urls:
+    - https://khemendra0.github.io/helm-edge/jcloud-edge-mist-0.0.1.tgz
+    version: 0.0.1
+generated: "2023-07-07T19:35:08.148473319+05:30"
